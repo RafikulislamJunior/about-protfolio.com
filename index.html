@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rafikul Islam | Network &amp; Infrastructure Engineer</title>
+<meta name="description" content="Rafikul Islam — Network &amp; Infrastructure Engineer specializing in networking, MikroTik, server administration, storage, virtualization, security and emerging AI infrastructure.">
+<link rel="canonical" href="https://example.com/">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#070B12">
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Rafikul Islam | Network &amp; Infrastructure Engineer">
+<meta property="og:description" content="Networking, MikroTik, server administration, storage, virtualization, security and emerging AI infrastructure.">
+<meta property="og:url" content="https://example.com/">
+<meta property="og:site_name" content="Rafikul Islam">
+<meta property="og:image" content="https://example.com/og-cover.jpg">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rafikul Islam | Network &amp; Infrastructure Engineer">
+<meta name="twitter:description" content="Networking, MikroTik, servers, storage, virtualization, security and AI infrastructure.">
+<meta name="twitter:image" content="https://example.com/og-cover.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Rafikul Islam Junior",
+  "alternateName":"RI Junior",
+  "jobTitle":"Network & Infrastructure Engineer",
+  "url":"https://example.com/",
+  "address":{"@type":"PostalAddress","addressCountry":"West-kazipara, Mirpur, Dhaka-1216.BD"},
+  "knowsAbout":["Computer Networking","MikroTik RouterOS","Linux Server Administration","Windows Server","Virtualization","Proxmox","Network Security","NAS and Storage","Cloud Infrastructure","AI Infrastructure"],
+  "sameAs":[]
+}
+</script>
+
+<style>
+/* ============================================================
+   1. DESIGN TOKENS  — change the theme here only
+   ============================================================ */
+:root{
+  /* dark (default) */
+  --bg:#070B12;
+  --bg-2:#0D131D;
+  --card:#111925;
+  --card-2:#151E2C;
+  --text:#F5F7FA;
+  --text-2:#9AA6B2;
+  --text-3:#6B7784;
+  --accent:#4F8CFF;
+  --accent-2:#35D0BA;
+  --highlight:#8B7CFF;
+  --line:rgba(255,255,255,.08);
+  --line-2:rgba(255,255,255,.14);
+  --glass:rgba(17,25,37,.72);
+  --shadow:0 18px 40px -20px rgba(0,0,0,.85);
+  --ok:#35D0BA;
+  --warn:#FFB454;
+  --err:#FF6B6B;
+
+  /* scale */
+  --r-sm:8px; --r:14px; --r-lg:20px;
+  --pad:clamp(20px,5vw,40px);
+  --maxw:1240px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+html[data-theme="light"]{
+  --bg:#F7F9FC;
+  --bg-2:#EDF1F7;
+  --card:#FFFFFF;
+  --card-2:#F4F7FB;
+  --text:#0C1420;
+  --text-2:#546274;
+  --text-3:#7E8B9B;
+  --accent:#1F5FD8;
+  --accent-2:#0E9C8A;
+  --highlight:#6455D6;
+  --line:rgba(12,20,32,.10);
+  --line-2:rgba(12,20,32,.18);
+  --glass:rgba(255,255,255,.82);
+  --shadow:0 14px 34px -22px rgba(16,32,60,.45);
+}
+
+/* ============================================================
+   2. BASE
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:16px;line-height:1.65;overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4,.brand,.stat-k,.tl-title{font-family:Manrope,Inter,ui-sans-serif,system-ui,sans-serif;letter-spacing:-.02em}
+h1{font-size:clamp(2rem,6.2vw,3.85rem);line-height:1.06;font-weight:800;margin:0}
+h2{font-size:clamp(1.55rem,3.6vw,2.4rem);line-height:1.15;font-weight:800;margin:0}
+h3{font-size:1.1rem;font-weight:700;margin:0;line-height:1.3}
+p{margin:0 0 1rem}
+a{color:var(--accent);text-decoration:none}
+img{max-width:100%;display:block}
+ul{margin:0;padding:0;list-style:none}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+::selection{background:var(--accent);color:#fff}
+
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding-inline:var(--pad)}
+section{padding-block:clamp(56px,9vw,104px);position:relative;scroll-margin-top:84px}
+.alt{background:var(--bg-2)}
+
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:600;
+  color:var(--accent-2);letter-spacing:.06em;margin-bottom:12px;
+}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--accent-2);opacity:.7}
+.sec-head{max-width:64ch;margin-bottom:clamp(28px,4vw,46px)}
+.sec-head p{color:var(--text-2);margin:12px 0 0;font-size:1.02rem}
+
+.grid{display:grid;gap:clamp(14px,1.8vw,20px)}
+.g2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(252px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(215px,1fr))}
+
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  padding:clamp(18px,2.4vw,26px);position:relative;
+  transition:border-color .25s var(--ease),transform .25s var(--ease),background .25s var(--ease);
+}
+.card:hover{border-color:var(--line-2);transform:translateY(-3px);background:var(--card-2)}
+
+/* ============================================================
+   3. BUTTONS
+   ============================================================ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  min-height:46px;padding:12px 22px;border-radius:10px;border:1px solid transparent;
+  font:600 .95rem/1 Inter,sans-serif;cursor:pointer;
+  transition:transform .18s var(--ease),box-shadow .25s var(--ease),background .2s,border-color .2s,color .2s;
+}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{box-shadow:0 0 0 1px var(--accent),0 10px 30px -10px rgba(79,140,255,.65)}
+.btn-ghost{background:transparent;border-color:var(--line-2);color:var(--text)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+.btn-link{background:none;border:0;color:var(--text-2);padding:12px 4px}
+.btn-link:hover{color:var(--accent-2)}
+.btn-sm{min-height:38px;padding:9px 16px;font-size:.87rem}
+
+/* ============================================================
+   4. NAV
+   ============================================================ */
+.nav{
+  position:fixed;inset:0 0 auto 0;z-index:80;
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  background:transparent;border-bottom:1px solid transparent;
+  transition:background .3s var(--ease),border-color .3s,padding .3s var(--ease);
+  padding-block:16px;
+}
+.nav.solid{background:var(--glass);border-bottom-color:var(--line);padding-block:9px}
+.nav-in{display:flex;align-items:center;gap:18px}
+.brand{display:flex;align-items:center;gap:11px;color:var(--text);flex:none}
+.mark{
+  width:40px;height:40px;flex:none;display:grid;place-content:center;border-radius:11px;
+  background:linear-gradient(145deg,var(--accent),var(--accent-2));
+  color:#04080F;font:800 .95rem/1 Manrope,sans-serif;letter-spacing:.02em;
+}
+.brand b{display:block;font-size:.95rem;font-weight:700;line-height:1.15}
+.brand span{display:block;font-size:.72rem;color:var(--text-2);font-weight:500;font-family:Inter}
+.nav-links{display:flex;gap:2px;margin-left:auto;align-items:center}
+.nav-links a{
+  color:var(--text-2);font-size:.9rem;font-weight:500;padding:9px 13px;border-radius:8px;
+  transition:color .2s,background .2s;position:relative;
+}
+.nav-links a:hover{color:var(--text);background:var(--card)}
+.nav-links a.active{color:var(--text)}
+.nav-links a.active::after{
+  content:"";position:absolute;left:13px;right:13px;bottom:3px;height:2px;border-radius:2px;
+  background:var(--accent);
+}
+.nav-act{display:flex;align-items:center;gap:8px;flex:none}
+.icon-btn{
+  width:42px;height:42px;display:grid;place-content:center;border-radius:10px;
+  background:transparent;border:1px solid var(--line);color:var(--text-2);cursor:pointer;
+  transition:color .2s,border-color .2s;
+}
+.icon-btn:hover{color:var(--accent);border-color:var(--accent)}
+.burger{display:none}
+#navMenu{display:contents}
+
+@media (max-width:1000px){
+  .burger{display:grid}
+  #navMenu{
+    display:block;position:fixed;inset:0 0 0 auto;width:min(320px,86vw);
+    background:var(--bg-2);border-left:1px solid var(--line);
+    padding:86px 22px 30px;transform:translateX(100%);
+    transition:transform .32s var(--ease);overflow-y:auto;
+  }
+  #navMenu.open{transform:translateX(0)}
+  .nav-links{flex-direction:column;align-items:stretch;gap:2px;margin:0}
+  .nav-links a{padding:14px 14px;font-size:1rem;min-height:46px;display:flex;align-items:center}
+  .nav-links a.active::after{left:14px;right:auto;width:16px;bottom:9px}
+  .nav-act{margin-top:22px;flex-direction:column;align-items:stretch}
+  .nav-act .btn{width:100%}
+  .nav .nav-act.desk{display:none}
+  .scrim{position:fixed;inset:0;background:rgba(3,6,11,.6);opacity:0;pointer-events:none;transition:opacity .3s;z-index:70}
+  .scrim.on{opacity:1;pointer-events:auto}
+}
+@media (min-width:1001px){ .nav-act.mob{display:none} .scrim{display:none} }
+
+/* ============================================================
+   5. HERO
+   ============================================================ */
+.hero{padding-top:clamp(112px,16vw,168px);padding-bottom:clamp(40px,6vw,70px);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,64px);align-items:center}
+@media (max-width:940px){.hero-grid{grid-template-columns:1fr;gap:38px}}
+.hero-copy{max-width:60ch}
+.hero h1 .ln{display:block}
+.hero-sub{font-size:clamp(1rem,2.1vw,1.16rem);color:var(--text);margin:22px 0 14px;font-weight:500;max-width:52ch}
+.hero-desc{color:var(--text-2);max-width:56ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:28px}
+.avail{
+  display:inline-flex;align-items:center;gap:9px;font-size:.82rem;color:var(--text-2);
+  border:1px solid var(--line);background:var(--card);border-radius:99px;padding:6px 14px;margin-bottom:20px;
+}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent-2);box-shadow:0 0 0 3px rgba(53,208,186,.16)}
+@media (max-width:520px){ .hero-cta .btn{flex:1 1 100%} }
+
+/* infrastructure visual */
+.viz{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);
+  padding:clamp(14px,2vw,22px);box-shadow:var(--shadow);
+}
+.viz-head{display:flex;align-items:center;gap:7px;padding:0 4px 12px;border-bottom:1px solid var(--line);margin-bottom:14px}
+.viz-head i{width:9px;height:9px;border-radius:50%;background:var(--line-2);display:block}
+.viz-head span{margin-left:auto;font-size:.72rem;color:var(--text-3);font-family:Manrope;letter-spacing:.04em}
+.stack{display:grid;gap:0}
+.node{
+  display:grid;grid-template-columns:38px 1fr auto;align-items:center;gap:13px;
+  background:var(--card-2);border:1px solid var(--line);border-radius:11px;padding:11px 14px;
+  transition:border-color .3s var(--ease),transform .3s var(--ease);
+}
+.node:hover{border-color:var(--accent);transform:translateX(3px)}
+.node .ic{width:38px;height:38px;border-radius:9px;display:grid;place-content:center;background:rgba(79,140,255,.12);color:var(--accent)}
+.node.t2 .ic{background:rgba(53,208,186,.12);color:var(--accent-2)}
+.node.t3 .ic{background:rgba(139,124,255,.14);color:var(--highlight)}
+.node b{display:block;font:600 .92rem/1.3 Manrope,sans-serif}
+.node small{color:var(--text-3);font-size:.76rem}
+.node em{font-style:normal;font-size:.68rem;color:var(--text-3);border:1px solid var(--line);border-radius:5px;padding:2px 7px}
+.link{height:20px;display:grid;place-content:center}
+.link svg{overflow:visible}
+.link .pipe{stroke:var(--line-2);stroke-width:2}
+.link .flow{stroke:var(--accent-2);stroke-width:2;stroke-dasharray:4 12;animation:flow 1.6s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-32}}
+
+/* ============================================================
+   6. CAPABILITY STATS
+   ============================================================ */
+.stat{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;transition:border-color .25s,transform .25s var(--ease)}
+.stat:hover{border-color:var(--accent);transform:translateY(-3px)}
+.stat-k{font-size:1.14rem;font-weight:700;margin-bottom:4px}
+.stat p{margin:0;color:var(--text-2);font-size:.88rem;line-height:1.5}
+.stat .bar{height:2px;width:34px;background:var(--accent);border-radius:2px;margin-bottom:14px}
+.stat:nth-child(2) .bar{background:var(--accent-2)}
+.stat:nth-child(3) .bar{background:var(--highlight)}
+.stat:nth-child(4) .bar{background:var(--warn)}
+
+/* ============================================================
+   7. ABOUT
+   ============================================================ */
+.about{display:grid;grid-template-columns:340px 1fr;gap:clamp(26px,4vw,56px);align-items:start}
+@media (max-width:860px){.about{grid-template-columns:1fr}}
+.portrait{
+  aspect-ratio:4/5;border-radius:var(--r-lg);border:1px solid var(--line);overflow:hidden;
+  background:
+    linear-gradient(145deg,rgba(79,140,255,.10),rgba(53,208,186,.07)),
+    var(--card);
+  display:grid;place-content:center;text-align:center;padding:24px;position:relative;
+}
+.portrait::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:34px 34px;opacity:.5;
+}
+.portrait b{display:block;font:800 2.4rem/1 Manrope,sans-serif;color:var(--text-2);margin-bottom:8px}
+.portrait small{color:var(--text-3);font-size:.78rem;position:relative;z-index:1}
+.about-body p{color:var(--text-2);max-width:66ch}
+.about-body p:first-child{color:var(--text);font-size:1.06rem}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 26px}
+.fact{font-size:.8rem;color:var(--text-2);border:1px solid var(--line);background:var(--card);border-radius:8px;padding:7px 12px}
+.fact b{color:var(--text);font-weight:600}
+
+/* ============================================================
+   8. EXPERTISE + STACK
+   ============================================================ */
+.exp-card h3{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.exp-card h3 .ic{width:32px;height:32px;border-radius:8px;display:grid;place-content:center;background:rgba(79,140,255,.12);color:var(--accent);flex:none}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{font-size:.78rem;color:var(--text-2);background:var(--bg-2);border:1px solid var(--line);border-radius:7px;padding:5px 10px;transition:color .2s,border-color .2s}
+.card:hover .chip{border-color:var(--line-2)}
+.chip:hover{color:var(--accent-2);border-color:var(--accent-2)}
+html[data-theme="light"] .chip{background:var(--bg-2)}
+
+.stack-row{border-top:1px solid var(--line);padding:20px 0;display:grid;grid-template-columns:180px 1fr;gap:18px;align-items:start}
+.stack-row:last-child{border-bottom:1px solid var(--line)}
+.stack-row h3{font-size:.98rem;color:var(--text)}
+.stack-row h3 small{display:block;font:500 .76rem/1.4 Inter;color:var(--text-3);margin-top:3px}
+@media (max-width:680px){.stack-row{grid-template-columns:1fr;gap:12px}}
+.badge{
+  display:inline-flex;align-items:center;gap:7px;font-size:.84rem;color:var(--text);
+  background:var(--card);border:1px solid var(--line);border-radius:9px;padding:8px 13px;
+  transition:border-color .2s,transform .2s var(--ease),color .2s;
+}
+.badge:hover{border-color:var(--accent);transform:translateY(-2px)}
+.badge i{width:6px;height:6px;border-radius:50%;background:var(--accent-2);flex:none}
+
+/* ============================================================
+   9. SERVICES
+   ============================================================ */
+.svc .ic{width:40px;height:40px;border-radius:10px;display:grid;place-content:center;background:rgba(53,208,186,.11);color:var(--accent-2);margin-bottom:15px}
+.svc h3{margin-bottom:7px}
+.svc p{margin:0;color:var(--text-2);font-size:.91rem}
+.svc::after{
+  content:"";position:absolute;inset:auto 0 0 0;height:2px;border-radius:2px;
+  background:linear-gradient(90deg,var(--accent),var(--accent-2));
+  transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease);
+}
+.svc:hover::after{transform:scaleX(1)}
+
+/* ============================================================
+   10. PROJECTS
+   ============================================================ */
+.proj{display:flex;flex-direction:column;cursor:pointer;text-align:left;width:100%;font:inherit;color:inherit}
+.proj-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+.tag{font-size:.72rem;color:var(--accent);background:rgba(79,140,255,.10);border:1px solid rgba(79,140,255,.25);border-radius:6px;padding:4px 9px;font-weight:600}
+.tag.ph{color:var(--warn);background:rgba(255,180,84,.10);border-color:rgba(255,180,84,.3)}
+.proj h3{margin-bottom:8px}
+.proj .sum{color:var(--text-2);font-size:.91rem;margin-bottom:16px}
+.proj .more{margin-top:auto;color:var(--accent-2);font-size:.87rem;font-weight:600;display:inline-flex;gap:7px;align-items:center}
+.proj:hover .more .ar{transform:translateX(4px)}
+.more .ar{transition:transform .25s var(--ease)}
+.empty{
+  border:1px dashed var(--line-2);border-radius:var(--r);padding:clamp(30px,5vw,54px);
+  text-align:center;background:var(--card);
+}
+.empty h3{margin-bottom:8px}
+.empty p{color:var(--text-2);max-width:48ch;margin:0 auto 18px;font-size:.93rem}
+
+/* ============================================================
+   11. DIAGRAMS (lab / AI / case study)
+   ============================================================ */
+.diagram{
+  background:var(--bg-2);border:1px solid var(--line);border-radius:var(--r);
+  padding:clamp(16px,2.6vw,28px);overflow-x:auto;
+}
+html[data-theme="light"] .diagram{background:var(--card)}
+.tree{font:500 .84rem/1.9 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--text-2);white-space:pre;margin:0;min-width:min(100%,340px)}
+.tree b{color:var(--text);font-weight:600}
+.tree u{color:var(--accent);text-decoration:none}
+.tree em{color:var(--accent-2);font-style:normal}
+.dia-cap{font-size:.78rem;color:var(--text-3);margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+
+.lab-card{padding:18px 20px}
+.lab-card h3{font-size:.98rem;margin-bottom:5px}
+.lab-card p{margin:0;font-size:.85rem;color:var(--text-2)}
+.lab-card .st{font-size:.72rem;color:var(--accent-2);font-weight:600;margin-top:10px;display:inline-block}
+
+/* ============================================================
+   12. AI SECTION
+   ============================================================ */
+.ai{position:relative;overflow:hidden}
+.ai::before{
+  content:"";position:absolute;top:-30%;right:-10%;width:520px;height:520px;border-radius:50%;
+  background:radial-gradient(circle,rgba(139,124,255,.13),transparent 68%);pointer-events:none;
+}
+.note{
+  border-left:2px solid var(--highlight);padding:12px 0 12px 16px;color:var(--text-2);
+  font-size:.9rem;margin-top:22px;max-width:62ch;
+}
+
+/* ============================================================
+   13. BUSINESS / EXPERIENCE / TIMELINE
+   ============================================================ */
+.biz h3{margin-bottom:6px}
+.biz p{margin:0;font-size:.9rem;color:var(--text-2)}
+.biz .n{font:700 .8rem/1 Manrope;color:var(--text-3);margin-bottom:12px;display:block}
+
+.timeline{position:relative;padding-left:30px;max-width:760px}
+.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:1px;background:var(--line-2)}
+.tl{position:relative;padding-bottom:30px}
+.tl:last-child{padding-bottom:0}
+.tl::before{
+  content:"";position:absolute;left:-30px;top:6px;width:15px;height:15px;border-radius:50%;
+  background:var(--bg);border:2px solid var(--accent);
+}
+.tl.future::before{border-color:var(--highlight);border-style:dashed}
+.alt .tl::before{background:var(--bg-2)}
+.tl-title{font-size:1.04rem;font-weight:700}
+.tl-meta{font-size:.78rem;color:var(--accent-2);font-weight:600;margin-bottom:5px}
+.tl p{margin:4px 0 0;color:var(--text-2);font-size:.9rem;max-width:58ch}
+
+/* ============================================================
+   14. CONTACT
+   ============================================================ */
+.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(28px,4vw,56px);align-items:start}
+@media (max-width:860px){.contact-grid{grid-template-columns:1fr}}
+.ch{display:flex;align-items:center;gap:14px;padding:15px 18px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);transition:border-color .2s,transform .2s var(--ease);margin-bottom:10px;color:var(--text)}
+.ch:hover{border-color:var(--accent);transform:translateX(3px)}
+.ch .ic{width:38px;height:38px;border-radius:9px;display:grid;place-content:center;background:rgba(79,140,255,.11);color:var(--accent);flex:none}
+.ch b{display:block;font-size:.92rem;font-weight:600}
+.ch small{color:var(--text-3);font-size:.78rem}
+
+form{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:clamp(20px,3vw,30px)}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:.84rem;font-weight:600;margin-bottom:7px}
+.field input,.field textarea{
+  width:100%;background:var(--bg-2);border:1px solid var(--line);border-radius:10px;
+  padding:13px 15px;color:var(--text);font:400 .95rem/1.5 Inter,sans-serif;min-height:48px;
+  transition:border-color .2s,background .2s;
+}
+html[data-theme="light"] .field input,html[data-theme="light"] .field textarea{background:var(--bg-2)}
+.field textarea{resize:vertical;min-height:130px}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--accent);background:var(--card-2)}
+.field input[aria-invalid="true"],.field textarea[aria-invalid="true"]{border-color:var(--err)}
+.err{display:block;color:var(--err);font-size:.79rem;margin-top:6px;min-height:0}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.formnote{font-size:.8rem;color:var(--text-3);margin:14px 0 0}
+.status{margin-top:14px;font-size:.88rem;padding:12px 14px;border-radius:10px;display:none}
+.status.show{display:block}
+.status.ok{background:rgba(53,208,186,.10);border:1px solid rgba(53,208,186,.3);color:var(--accent-2)}
+.status.bad{background:rgba(255,107,107,.09);border:1px solid rgba(255,107,107,.3);color:var(--err)}
+
+/* ============================================================
+   15. FOOTER
+   ============================================================ */
+footer{border-top:1px solid var(--line);background:var(--bg-2);padding-block:46px 30px}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px}
+@media (max-width:760px){.f-grid{grid-template-columns:1fr;gap:26px}}
+footer h4{font-size:.8rem;font-weight:700;margin:0 0 14px;color:var(--text-3);font-family:Manrope}
+footer .f-links a{display:block;color:var(--text-2);font-size:.9rem;padding:6px 0;transition:color .2s}
+footer .f-links a:hover{color:var(--accent)}
+.socials{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}
+.soc{width:42px;height:42px;border-radius:10px;border:1px solid var(--line);display:grid;place-content:center;color:var(--text-2);background:var(--card);transition:color .2s,border-color .2s,transform .2s var(--ease)}
+.soc:hover{color:var(--accent);border-color:var(--accent);transform:translateY(-2px)}
+.soc[data-placeholder="true"]{opacity:.55}
+.f-bottom{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;margin-top:36px;padding-top:22px;border-top:1px solid var(--line);color:var(--text-3);font-size:.84rem}
+
+/* ============================================================
+   16. MODAL (case study)
+   ============================================================ */
+.modal{position:fixed;inset:0;z-index:100;display:none;padding:clamp(10px,3vw,40px);overflow-y:auto}
+.modal.open{display:block}
+.modal-bg{position:fixed;inset:0;background:rgba(3,6,11,.78);backdrop-filter:blur(5px)}
+.modal-box{
+  position:relative;max-width:940px;margin:0 auto;background:var(--bg-2);
+  border:1px solid var(--line-2);border-radius:var(--r-lg);padding:clamp(22px,3.4vw,44px);
+  box-shadow:var(--shadow);
+}
+.modal-close{position:absolute;top:14px;right:14px}
+.cs-h{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:26px}
+.cs-h h2{margin:10px 0 8px;font-size:clamp(1.4rem,3.4vw,2rem)}
+.cs-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.cs-block{margin-bottom:26px}
+.cs-block h3{margin-bottom:9px;font-size:1.02rem;color:var(--text)}
+.cs-block p,.cs-block li{color:var(--text-2);font-size:.94rem}
+.cs-block ul li{padding-left:18px;position:relative;margin-bottom:6px}
+.cs-block ul li::before{content:"";position:absolute;left:0;top:10px;width:6px;height:6px;border-radius:50%;background:var(--accent-2)}
+.shot{border:1px dashed var(--line-2);border-radius:var(--r);padding:34px;text-align:center;color:var(--text-3);font-size:.85rem;background:var(--card)}
+
+/* ============================================================
+   17. LOADER / CURSOR / MOTION / 404
+   ============================================================ */
+#loader{position:fixed;inset:0;z-index:200;background:var(--bg);display:grid;place-content:center;transition:opacity .45s var(--ease),visibility .45s}
+#loader.done{opacity:0;visibility:hidden}
+.ld{display:flex;flex-direction:column;align-items:center;gap:16px}
+.ld .mark{width:56px;height:56px;font-size:1.25rem;animation:pulse 1.5s var(--ease) infinite}
+.ld .prog{width:120px;height:2px;background:var(--line-2);border-radius:2px;overflow:hidden}
+.ld .prog i{display:block;height:100%;width:40%;background:var(--accent-2);animation:slide 1.05s var(--ease) infinite}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(.94);opacity:.82}}
+@keyframes slide{0%{transform:translateX(-100%)}100%{transform:translateX(250%)}}
+
+.cursor{position:fixed;top:0;left:0;width:26px;height:26px;border:1px solid var(--accent);border-radius:50%;
+  pointer-events:none;z-index:150;transform:translate(-50%,-50%);transition:width .2s,height .2s,background .2s,opacity .2s;opacity:0;mix-blend-mode:difference}
+.cursor.on{opacity:.7}
+.cursor.hot{width:42px;height:42px;background:rgba(79,140,255,.12)}
+@media (hover:none),(pointer:coarse){.cursor{display:none!important}}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .55s var(--ease),transform .55s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .reveal{opacity:1;transform:none}
+}
+
+#notfound{display:none;min-height:70vh;place-content:center;text-align:center;padding-top:120px}
+#notfound.show{display:grid}
+#notfound .code{font:800 clamp(3.4rem,13vw,7rem)/1 Manrope;color:var(--accent);opacity:.18}
+.skip{position:absolute;left:-9999px;top:0;background:var(--accent);color:#fff;padding:12px 18px;border-radius:0 0 8px 0;z-index:300}
+.skip:focus{left:0}
+</style>
+</head>
+<body>
+
+<div id="loader" aria-hidden="true">
+  <div class="ld">
+    <div class="mark">RI</div>
+    <div class="prog"><i></i></div>
+  </div>
+</div>
+
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="Rafikul Islam — home">
+      <span class="mark" aria-hidden="true">RI Junior</span>
+      <span><b>RI Junior</b><span>Rafikul Islam Junior</span></span>
+    </a>
+
+    <nav id="navMenu" aria-label="Main">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#lab">Lab</a></li>
+        <li><a href="#business">Business</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-act mob">
+        <a class="btn btn-primary btn-sm" href="#" data-resume>Resume</a>
+      </div>
+    </nav>
+
+    <div class="nav-act desk">
+      <a class="btn btn-ghost btn-sm" href="#" data-resume>Resume</a>
+      <button class="icon-btn" id="themeBtn" aria-label="Switch to light mode" aria-pressed="false">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M6.3 17.7l-1.4 1.4M19.1 4.9l-1.4 1.4"/></svg>
+      </button>
+      <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="scrim" id="scrim"></div>
+
+<main id="main">
+<div id="site">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="avail"><i class="dot"></i> Available for infrastructure projects &amp; consulting</span>
+      <h1>
+        <span class="ln">Building reliable</span>
+        <span class="ln">networks, servers,</span>
+        <span class="ln">infrastructure.</span>
+      </h1>
+      <p class="hero-sub">Network &amp; Infrastructure Engineer focused on enterprise networking, server administration, storage, security and emerging AI infrastructure.</p>
+      <p class="hero-desc">I work across networking, server infrastructure, IT systems and technology solutions — combining hands-on technical experience with an entrepreneurial mindset.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#projects">Explore my work</a>
+        <a class="btn btn-ghost" href="#contact">Let's connect</a>
+        <a class="btn btn-link" href="#" data-resume>View resume →</a>
+      </div>
+    </div>
+
+    <div class="viz reveal" aria-label="Infrastructure stack diagram: internet through firewall, core network, servers, storage, to cloud and AI infrastructure">
+      <div class="viz-head" aria-hidden="true"><i></i><i></i><i></i><span>infrastructure-path</span></div>
+      <div class="stack">
+        <div class="node">
+          <span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg></span>
+          <span><b>Internet</b><small>WAN / ISP uplink</small></span><em>edge</em>
+        </div>
+        <div class="link" aria-hidden="true"><svg width="2" height="20"><line class="pipe" x1="1" y1="0" x2="1" y2="20"/><line class="flow" x1="1" y1="0" x2="1" y2="20"/></svg></div>
+        <div class="node t2">
+          <span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5.5c0 4.3-3 8.2-7 9.5-4-1.3-7-5.2-7-9.5V6z"/></svg></span>
+          <span><b>Firewall / Router</b><small>NAT · VPN · filtering</small></span><em>MikroTik</em>
+        </div>
+        <div class="link" aria-hidden="true"><svg width="2" height="20"><line class="pipe" x1="1" y1="0" x2="1" y2="20"/><line class="flow" x1="1" y1="0" x2="1" y2="20"/></svg></div>
+        <div class="node">
+          <span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="9" width="18" height="7" rx="2"/><path d="M7 9V6M17 9V6M7 16v3M17 16v3"/></svg></span>
+          <span><b>Core network</b><small>VLAN segmentation · routing</small></span><em>L2/L3</em>
+        </div>
+        <div class="link" aria-hidden="true"><svg width="2" height="20"><line class="pipe" x1="1" y1="0" x2="1" y2="20"/><line class="flow" x1="1" y1="0" x2="1" y2="20"/></svg></div>
+        <div class="node">
+          <span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/></svg></span>
+          <span><b>Servers</b><small>Linux · Windows · virtualization</small></span><em>compute</em>
+        </div>
+        <div class="link" aria-hidden="true"><svg width="2" height="20"><line class="pipe" x1="1" y1="0" x2="1" y2="20"/><line class="flow" x1="1" y1="0" x2="1" y2="20"/></svg></div>
+        <div class="node t2">
+          <span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></span>
+          <span><b>Storage</b><small>NAS · RAID · ZFS · backup</small></span><em>data</em>
+        </div>
+        <div class="link" aria-hidden="true"><svg width="2" height="20"><line class="pipe" x1="1" y1="0" x2="1" y2="20"/><line class="flow" x1="1" y1="0" x2="1" y2="20"/></svg></div>
+        <div class="node t3">
+          <span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 18a4 4 0 010-8 5.5 5.5 0 0110.5-1.5A3.75 3.75 0 0118 18z"/></svg></span>
+          <span><b>Cloud / AI infra</b><small>containers · GPU compute</small></span><em>next</em>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CAPABILITY OVERVIEW ================= -->
+<section class="alt" id="capability" style="padding-block:clamp(36px,5vw,58px)">
+  <div class="wrap">
+    <div class="grid g4">
+      <div class="stat reveal"><div class="bar"></div><div class="stat-k">Networking</div><p>Enterprise &amp; SMB infrastructure</p></div>
+      <div class="stat reveal"><div class="bar"></div><div class="stat-k">Servers</div><p>Linux · Windows · virtualization</p></div>
+      <div class="stat reveal"><div class="bar"></div><div class="stat-k">Security</div><p>Firewall · VPN · hardening</p></div>
+      <div class="stat reveal"><div class="bar"></div><div class="stat-k">Infrastructure</div><p>NAS · storage · monitoring</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="wrap">
+    <div class="about">
+      <div class="portrait reveal" role="img" aria-label="Portrait placeholder for Rafikul Islam Junior">
+        <b aria-hidden="true">RI Junior</b>
+        <small>Replace with a professional portrait<br>(recommended 1000×1250, WebP)</small>
+      </div>
+      <div class="about-body reveal">
+        <span class="eyebrow">About me</span>
+        <h2>Technology from the wire up.</h2>
+        <p style="margin-top:16px">I'm RI Junior, a technology-focused professional with hands-on experience across IT systems, networking, surveillance infrastructure and technology solutions.</p>
+        <p>My interests extend from network architecture and MikroTik configuration to server administration, storage, virtualization, cloud infrastructure and the evolving world of AI infrastructure.</p>
+        <p>Alongside technology, I also operate and work with businesses involving IT products, gadgets, e-commerce and international product sourcing. This combination gives me both a technical and a business perspective when designing technology solutions.</p>
+        <div class="facts">
+          <span class="fact"><b>Based in</b> Bangladesh</span>
+          <span class="fact"><b>Focus</b> Network &amp; infrastructure</span>
+          <span class="fact"><b>Also</b> IT business &amp; sourcing</span>
+          <span class="fact"><b>Learning</b> AI infrastructure</span>
+        </div>
+        <a class="btn btn-primary" href="#" data-resume>Download resume</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERTISE ================= -->
+<section class="alt" id="expertise">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Core expertise</span>
+      <h2>Technical areas I work in</h2>
+      <p>Areas of practical experience, active study and ongoing lab work. Each group is editable — remove anything that no longer reflects current capability.</p>
+    </div>
+    <div class="grid g3" id="expertiseGrid"></div>
+  </div>
+</section>
+
+<!-- ================= TECHNOLOGY STACK ================= -->
+<section id="stack">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Technology stack</span>
+      <h2>Tools and platforms</h2>
+      <p>The systems I build with, administer and test in the lab.</p>
+    </div>
+    <div id="stackRows"></div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="alt" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Services</span>
+      <h2>Technology &amp; infrastructure services</h2>
+      <p>Practical engagements for businesses that need networks and systems that stay up.</p>
+    </div>
+    <div class="grid g3" id="servicesGrid"></div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Featured projects</span>
+      <h2>Infrastructure work, documented</h2>
+      <p>Each project opens a full case study: challenge, architecture, implementation, security, monitoring and result.</p>
+    </div>
+    <div class="grid g3" id="projectsGrid"></div>
+  </div>
+</section>
+
+<!-- ================= LAB ================= -->
+<section class="alt" id="lab">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Infrastructure lab</span>
+      <h2>My infrastructure lab</h2>
+      <p>Learning by building. Testing by breaking. Improving by rebuilding.</p>
+    </div>
+    <div class="grid" style="grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:clamp(18px,3vw,32px)" id="labWrap">
+      <div class="diagram reveal">
+<pre class="tree">
+<b>Internet</b>
+   │
+<u>MikroTik Router</u>
+   │
+<u>Managed Switch</u>
+   │
+   ├── <b>Proxmox Host</b>
+   │      ├── <em>Linux Server</em>
+   │      ├── <em>Windows Server</em>
+   │      └── <em>Docker Host</em>
+   │
+   ├── <b>NAS / Storage</b>
+   │
+   └── <b>Monitoring Stack</b>
+</pre>
+        <p class="dia-cap">Lab topology — expandable as hardware and services are added.</p>
+      </div>
+      <div class="grid g2" style="align-content:start" id="labGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AI INFRASTRUCTURE ================= -->
+<section class="ai" id="ai">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Technical direction</span>
+      <h2>Exploring AI infrastructure</h2>
+      <p>The next generation of computing is moving toward increasingly distributed, GPU-intensive and highly automated infrastructure. My long-term technical focus includes understanding the infrastructure behind AI workloads — from GPU servers and high-speed networking to storage, virtualization, containers and scalable compute environments.</p>
+    </div>
+    <div class="grid" style="grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(18px,3vw,32px)" id="aiWrap">
+      <div class="diagram reveal">
+<pre class="tree">
+<b>Users</b>
+   │
+<u>API / Load Balancer</u>
+   │
+<b>Compute Cluster</b>
+   ├── <em>GPU Server</em>
+   ├── <em>GPU Server</em>
+   └── <em>GPU Server</em>
+   │
+<u>High-Speed Network</u>
+   │
+<b>Storage Cluster</b>
+   │
+<u>Monitoring</u>
+</pre>
+        <p class="dia-cap">Reference architecture for a GPU compute environment.</p>
+      </div>
+      <div class="reveal">
+        <h3 style="margin-bottom:14px">Technologies in focus</h3>
+        <div class="chips">
+          <span class="badge"><i></i>GPU compute</span>
+          <span class="badge"><i></i>Linux</span>
+          <span class="badge"><i></i>Docker</span>
+          <span class="badge"><i></i>Kubernetes</span>
+          <span class="badge"><i></i>High-speed networking</span>
+          <span class="badge"><i></i>Distributed storage</span>
+          <span class="badge"><i></i>Cloud</span>
+        </div>
+        <p class="note">This section documents a learning focus and long-term technical direction. It is not a claim of operating production AI infrastructure or a data center.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BUSINESS ================= -->
+<section class="alt" id="business">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Entrepreneurship</span>
+      <h2>Technology meets entrepreneurship</h2>
+      <p>Working across several business areas alongside technical work — which shapes how I scope, budget and support infrastructure for other businesses.</p>
+    </div>
+    <div class="grid g3" id="bizGrid"></div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Experience</span>
+      <h2>Real-world IT experience</h2>
+      <p>Practical areas of hands-on work across client sites, business systems and support.</p>
+    </div>
+    <div class="chips reveal" id="handsOn" style="margin-bottom:clamp(40px,6vw,66px)"></div>
+
+    <h3 class="reveal" style="margin-bottom:26px;font-size:1.25rem">Progression</h3>
+    <div class="timeline reveal" id="timeline"></div>
+  </div>
+</section>
+
+<!-- ================= CERTIFICATIONS ================= -->
+<section class="alt" id="certifications">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Credentials</span>
+      <h2>Certifications &amp; credentials</h2>
+      <p>Verified certifications only. Add entries in the content file as they are earned.</p>
+    </div>
+    <div id="certGrid"></div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <span class="eyebrow">Contact</span>
+        <h2>Let's build something reliable.</h2>
+        <p style="color:var(--text-2);margin:14px 0 28px;max-width:46ch">Have a network problem, infrastructure project, technology requirement or collaboration idea? Let's talk.</p>
+        <div id="channels"></div>
+      </div>
+
+      <form id="contactForm" novalidate class="reveal">
+        <div class="field">
+          <label for="cf-name">Name</label>
+          <input id="cf-name" name="name" type="text" autocomplete="name" maxlength="80" required aria-describedby="e-name">
+          <span class="err" id="e-name" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="cf-email">Email</label>
+          <input id="cf-email" name="email" type="email" autocomplete="email" maxlength="120" required aria-describedby="e-email">
+          <span class="err" id="e-email" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="cf-subject">Subject</label>
+          <input id="cf-subject" name="subject" type="text" maxlength="120" required aria-describedby="e-subject">
+          <span class="err" id="e-subject" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" maxlength="2000" required aria-describedby="e-message"></textarea>
+          <span class="err" id="e-message" role="alert"></span>
+        </div>
+        <div class="hp" aria-hidden="true">
+          <label for="cf-company">Company (leave blank)</label>
+          <input id="cf-company" name="company" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <button class="btn btn-primary" type="submit" style="width:100%">Send message</button>
+        <div class="status" id="formStatus" role="status" aria-live="polite"></div>
+        <p class="formnote">Protected by a hidden honeypot field, submission throttling and client-side validation. Connect a form endpoint in the content configuration to deliver messages server-side.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</div><!-- /#site -->
+
+<!-- ================= 404 ================= -->
+<div id="notfound">
+  <div class="wrap">
+    <div class="code" aria-hidden="true">404</div>
+    <h2 style="margin-bottom:12px">Looks like this packet took the wrong route.</h2>
+    <p style="color:var(--text-2);max-width:44ch;margin:0 auto 24px">The address you requested doesn't resolve to anything on this site.</p>
+    <a class="btn btn-primary" href="#top" id="homeBtn">Return home</a>
+  </div>
+</div>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a class="brand" href="#top" style="margin-bottom:12px">
+          <span class="mark" aria-hidden="true">RI</span>
+          <span><b>Rafikul Islam</b><span>Network &amp; Infrastructure Engineer</span></span>
+        </a>
+        <p style="color:var(--text-2);font-size:.9rem;max-width:36ch;margin-top:14px">Networking, servers, storage, security and the infrastructure underneath it all.</p>
+        <div class="socials" id="socials"></div>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <div class="f-links">
+          <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#services">Services</a><a href="#projects">Projects</a>
+        </div>
+      </div>
+      <div>
+        <h4>More</h4>
+        <div class="f-links">
+          <a href="#lab">Infrastructure lab</a><a href="#ai">AI infrastructure</a><a href="#business">Business</a><a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2026 Rafikul Islam. All rights reserved.</span>
+      <span>Designed &amp; built with technology</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= CASE STUDY MODAL ================= -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="csTitle">
+  <div class="modal-bg" data-close></div>
+  <div class="modal-box">
+    <button class="icon-btn modal-close" data-close aria-label="Close case study">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div id="csBody"></div>
+  </div>
+</div>
+
+<script>
+/* ==================================================================
+   CONTENT  —  edit everything here. No other file needs to change.
+   ================================================================== */
+const CONTENT = {
+
+  site: { domain:"https://example.com", resumeUrl:"", formEndpoint:"" },
+
+  /* --- contact channels. Leave value empty to show a placeholder. --- */
+  contact: {
+    email:   "",                 // e.g. "you@domain.com"
+    whatsapp:"",                 // e.g. "+8801XXXXXXXXX"
+    linkedin:""                  // full profile URL
+  },
+
+  social: [
+    { name:"LinkedIn", url:"null", icon:"in" },
+    { name:"GitHub",   url:"https://github.com/Rjshekh1", icon:"gh" },
+    { name:"Facebook", url:"https://www.facebook.com/rafikulislamjunior", icon:"fb" },
+    { name:"YouTube",  url:"null", icon:"yt" },
+    { name:"WhatsApp", url:"https://wa.me/8801309677765", icon:"wa" },
+    { name:"Email",    url:"rafikulislamjuniorr@gmail.com", icon:"em" }
+  ],
+
+  expertise: [
+    { title:"Networking", icon:"net", items:["TCP/IP","IPv4 / IPv6","Subnetting","VLAN","Routing","DHCP","DNS","NAT","Firewall","VPN","Troubleshooting","Monitoring"] },
+    { title:"MikroTik", icon:"rt", items:["RouterOS","Routing","Firewall","NAT","VLAN","VPN","OSPF","Traffic management","Failover","Optimization","Scripting","API automation"] },
+    { title:"Server administration", icon:"srv", items:["Linux Server","Windows Server","Active Directory","DNS","DHCP","File services","User management","Server security","Backup","Monitoring"] },
+    { title:"Storage & NAS", icon:"db", items:["NAS","RAID","ZFS","SMB","NFS","iSCSI","Storage planning","Backup architecture"] },
+    { title:"Virtualization", icon:"vm", items:["Proxmox","VMware","Hyper-V","KVM","Virtual networking","VM management","Server consolidation"] },
+    { title:"Security", icon:"sec", items:["Firewall","VPN","Network segmentation","Access control","MFA","Secure remote access","System hardening","Log monitoring"] },
+    { title:"Cloud & automation", icon:"cld", items:["AWS","Azure","Docker","Kubernetes","Python","Bash","PowerShell","API automation"] }
+  ],
+
+  stack: [
+    { group:"Networking",        note:"Routing, switching, segmentation", items:["MikroTik","Cisco","TCP/IP","VLAN","OSPF","BGP"] },
+    { group:"Operating systems", note:"Servers and endpoints",            items:["Linux","Windows Server","Windows","macOS"] },
+    { group:"Infrastructure",    note:"Virtualization and containers",    items:["Proxmox","VMware","Hyper-V","Docker","Kubernetes"] },
+    { group:"Storage",           note:"Capacity, redundancy, backup",     items:["TrueNAS","ZFS","NAS","RAID"] },
+    { group:"Monitoring",        note:"Visibility and alerting",          items:["Zabbix","Grafana","Prometheus","SNMP"] },
+    { group:"Automation",        note:"Scripting and integration",        items:["Python","Bash","PowerShell","REST API"] }
+  ],
+
+  services: [
+    { t:"Network infrastructure", d:"Network design, configuration, optimization and troubleshooting.", i:"net" },
+    { t:"MikroTik solutions", d:"RouterOS configuration, routing, firewall, VPN, VLAN and network management.", i:"rt" },
+    { t:"Server administration", d:"Linux and Windows server deployment, administration and maintenance.", i:"srv" },
+    { t:"NAS & storage", d:"Storage architecture, NAS deployment, backup and data management.", i:"db" },
+    { t:"Virtualization", d:"Virtual machine infrastructure using Proxmox, VMware and Hyper-V.", i:"vm" },
+    { t:"Security infrastructure", d:"Firewall, VPN, access control, segmentation and system hardening.", i:"sec" },
+    { t:"CCTV & surveillance networking", d:"IP camera networking, NVR, PoE infrastructure and remote monitoring.", i:"cam" },
+    { t:"IT infrastructure consulting", d:"Technology planning and infrastructure solutions for businesses.", i:"cld" }
+  ],
+
+  /* ------------------------------------------------------------------
+     PROJECTS — one template entry is included so the case-study layout
+     is visible. It is flagged `placeholder:true` and clearly labelled.
+     Replace it with real work, or set projects:[] for the empty state.
+     ------------------------------------------------------------------ */
+  projects: [
+    {
+      placeholder:true,
+      name:"Project title goes here",
+      category:"Enterprise Network Architecture",
+      date:"Month YYYY",
+      summary:"One or two sentences describing the environment and what was delivered. Keep it factual and specific.",
+      overview:"Describe the client or environment, its size, and why the work was needed.",
+      challenge:"State the concrete problem: outages, saturated links, flat network, no segmentation, no backup, no visibility.",
+      diagram:"Internet\n   │\nRouter / Firewall\n   │\nCore Switch\n   │\n   ├── VLAN 10  Admin\n   ├── VLAN 20  Staff\n   ├── VLAN 30  CCTV\n   ├── VLAN 40  Servers\n   └── VLAN 50  Guest",
+      tech:["MikroTik RouterOS","Managed switching","VLAN","VPN","Zabbix"],
+      implementation:["Step one of what was actually configured or deployed.","Step two.","Step three."],
+      security:["Segmentation and inter-VLAN policy.","Remote access method.","Hardening applied."],
+      monitoring:["What is monitored and how alerts are delivered."],
+      result:"Describe the measurable outcome. Only include numbers you can support.",
+      lessons:"What you would design differently next time."
+    }
+  ],
+
+  labs: [
+    { t:"Networking lab",       d:"VLANs, routing, firewall policy and failover scenarios.", s:"Active" },
+    { t:"Linux server lab",     d:"Services, users, permissions, hardening and backup.",     s:"Active" },
+    { t:"Windows server lab",   d:"Active Directory, DNS, DHCP and file services.",          s:"Active" },
+    { t:"Virtualization lab",   d:"Proxmox cluster, VM lifecycle and virtual networking.",   s:"Active" },
+    { t:"NAS lab",              d:"RAID and ZFS pools, shares, snapshots and restores.",     s:"Active" },
+    { t:"Docker lab",           d:"Containerized services, networks and persistent volumes.",s:"Active" },
+    { t:"Monitoring lab",       d:"Zabbix and Grafana dashboards, SNMP and alerting.",       s:"Active" },
+    { t:"Automation lab",       d:"Python and RouterOS API scripting for repeat tasks.",     s:"Building" }
+  ],
+
+  business: [
+    { t:"IT business",           d:"IT products, networking, CCTV, computer hardware and technology solutions." },
+    { t:"Gadget business",       d:"Technology gadgets and imported products." },
+    { t:"E-commerce",            d:"Online business and digital commerce operations." },
+    { t:"Clothing & lifestyle",  d:"Clothing and lifestyle-related e-commerce." },
+    { t:"International sourcing",d:"Product sourcing and importing from China and international suppliers." }
+  ],
+
+  handsOn:["Hardware troubleshooting","Software troubleshooting","Network configuration","CCTV installation","NVR configuration","IP camera setup","Router configuration","Printer networking","Access control","Attendance systems","Remote support","On-site support","System maintenance"],
+
+  timeline: [
+    { t:"IT & technology",        m:"Foundation",  d:"Hands-on technical experience with systems, hardware and support." },
+    { t:"IT business",            m:"Commercial",  d:"Technology products and solutions delivered to real customers." },
+    { t:"Infrastructure",         m:"Core focus",  d:"Networking, server administration and security work." },
+    { t:"Advanced infrastructure",m:"In progress", d:"Cloud, virtualization and automation." },
+    { t:"AI infrastructure",      m:"Ahead",       d:"GPU compute, high-speed networking and distributed storage.", future:true }
+  ],
+
+  certifications: []  // { name, org, date, credentialId, url }
+};
+
+/* ==================================================================
+   ICONS
+   ================================================================== */
+const ICON = {
+  net:'<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/>',
+  rt:'<rect x="3" y="9" width="18" height="7" rx="2"/><path d="M7 9V6M17 9V6M7 16v3M17 16v3"/>',
+  srv:'<rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/>',
+  db:'<ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/>',
+  vm:'<rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/>',
+  sec:'<path d="M12 3l7 3v5.5c0 4.3-3 8.2-7 9.5-4-1.3-7-5.2-7-9.5V6z"/><path d="M9.5 12l1.8 1.8L15 10"/>',
+  cld:'<path d="M7 18a4 4 0 010-8 5.5 5.5 0 0110.5-1.5A3.75 3.75 0 0118 18z"/>',
+  cam:'<path d="M3 8h13l4 3-4 3H3z"/><path d="M6 14v6M14 14v3"/>',
+  in:'<path d="M6.5 9v9M6.5 5.5v.01M11 18v-5a3 3 0 016 0v5"/>',
+  gh:'<path d="M9 19c-4 1.4-4-2.2-6-2.7m12 5v-3.6c0-1 .1-1.4-.5-2 2.6-.3 5-1.3 5-5.7a4.4 4.4 0 00-1.2-3 4 4 0 00-.1-3s-1-.3-3.3 1.2a11 11 0 00-6 0C6.6 3.7 5.6 4 5.6 4a4 4 0 00-.1 3A4.4 4.4 0 004.3 10c0 4.4 2.4 5.4 5 5.7-.6.6-.6 1.2-.5 2V21"/>',
+  fb:'<path d="M15 3h-2.5A4 4 0 008.5 7v3H6v4h2.5v7h4v-7H15l.5-4h-3V7.5a1 1 0 011-1H15z"/>',
+  yt:'<rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.5 9.5l5 2.5-5 2.5z"/>',
+  wa:'<path d="M3.5 20.5l1.3-4.2a8 8 0 113.2 3.1z"/><path d="M8.8 9.2c.4 2.6 2.4 4.6 5 5 .8.1 1.3-.6 1.2-1.3l-1.6-.6-.9.8a6 6 0 01-2.6-2.6l.8-.9-.6-1.6c-.7-.1-1.4.4-1.3 1.2z"/>',
+  em:'<rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/>'
+};
+const svg = (k, s=18) => `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICON[k]||ICON.net}</svg>`;
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+/* ==================================================================
+   RENDER
+   ================================================================== */
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+
+$('#expertiseGrid').innerHTML = CONTENT.expertise.map(e => `
+  <article class="card exp-card reveal">
+    <h3><span class="ic">${svg(e.icon,17)}</span>${esc(e.title)}</h3>
+    <div class="chips">${e.items.map(i=>`<span class="chip">${esc(i)}</span>`).join('')}</div>
+  </article>`).join('');
+
+$('#stackRows').innerHTML = CONTENT.stack.map(s => `
+  <div class="stack-row reveal">
+    <h3>${esc(s.group)}<small>${esc(s.note)}</small></h3>
+    <div class="chips">${s.items.map(i=>`<span class="badge"><i></i>${esc(i)}</span>`).join('')}</div>
+  </div>`).join('');
+
+$('#servicesGrid').innerHTML = CONTENT.services.map(s => `
+  <article class="card svc reveal">
+    <span class="ic">${svg(s.i,19)}</span>
+    <h3>${esc(s.t)}</h3><p>${esc(s.d)}</p>
+  </article>`).join('');
+
+$('#labGrid').innerHTML = CONTENT.labs.map(l => `
+  <article class="card lab-card reveal">
+    <h3>${esc(l.t)}</h3><p>${esc(l.d)}</p><span class="st">${esc(l.s)}</span>
+  </article>`).join('');
+
+$('#bizGrid').innerHTML = CONTENT.business.map((b,i) => `
+  <article class="card biz reveal">
+    <span class="n">${String(i+1).padStart(2,'0')}</span>
+    <h3>${esc(b.t)}</h3><p>${esc(b.d)}</p>
+  </article>`).join('');
+
+$('#handsOn').innerHTML = CONTENT.handsOn.map(h=>`<span class="badge"><i></i>${esc(h)}</span>`).join('');
+
+$('#timeline').innerHTML = CONTENT.timeline.map(t => `
+  <div class="tl${t.future?' future':''}">
+    <div class="tl-meta">${esc(t.m)}</div>
+    <div class="tl-title">${esc(t.t)}</div>
+    <p>${esc(t.d)}</p>
+  </div>`).join('');
+
+/* projects + empty state */
+const pg = $('#projectsGrid');
+if (!CONTENT.projects.length) {
+  pg.style.gridTemplateColumns = '1fr';
+  pg.innerHTML = `<div class="empty reveal">
+    <h3>No case studies published yet</h3>
+    <p>Project write-ups are added in the content file. Planned categories: enterprise network architecture, MikroTik deployment, virtualization lab, NAS &amp; storage, CCTV IP network, business IT infrastructure.</p>
+    <a class="btn btn-ghost" href="#contact">Ask about current work</a></div>`;
+} else {
+  pg.innerHTML = CONTENT.projects.map((p,i) => `
+    <button class="card proj reveal" data-p="${i}" aria-haspopup="dialog">
+      <div class="proj-top">
+        <span class="tag${p.placeholder?' ph':''}">${p.placeholder?'Template':esc(p.category)}</span>
+        <span style="font-size:.75rem;color:var(--text-3)">${esc(p.date)}</span>
+      </div>
+      <h3>${esc(p.name)}</h3>
+      <p class="sum">${esc(p.summary)}</p>
+      <div class="chips" style="margin-bottom:16px">${p.tech.slice(0,3).map(t=>`<span class="chip">${esc(t)}</span>`).join('')}</div>
+      <span class="more">View case study <span class="ar">→</span></span>
+    </button>`).join('');
+}
+
+/* certifications empty state */
+const cg = $('#certGrid');
+if (!CONTENT.certifications.length) {
+  cg.innerHTML = `<div class="empty reveal">
+    <h3>Add your certifications</h3>
+    <p>Each entry holds a name, issuing organization, date, credential ID and verification link. Nothing is listed here until it is earned and verifiable.</p>
+    <div class="chips" style="justify-content:center">
+      ${['MikroTik','Cisco','Linux','Cloud','Cybersecurity'].map(c=>`<span class="chip">${c}</span>`).join('')}
+    </div></div>`;
+} else {
+  cg.className = 'grid g3';
+  cg.innerHTML = CONTENT.certifications.map(c => `
+    <article class="card reveal">
+      <span class="tag">${esc(c.org)}</span>
+      <h3 style="margin:12px 0 6px">${esc(c.name)}</h3>
+      <p style="color:var(--text-2);font-size:.85rem;margin:0">${esc(c.date)}${c.credentialId?' · ID '+esc(c.credentialId):''}</p>
+      ${c.url?`<a class="more" style="margin-top:14px;display:inline-flex" href="${esc(c.url)}" rel="noopener noreferrer" target="_blank">Verify <span class="ar">→</span></a>`:''}
+    </article>`).join('');
+}
+
+/* contact channels */
+const C = CONTENT.contact;
+const chan = [
+  { k:'em', b:'Email',    v:C.email,    href:C.email?'mailto:'+C.email:'' },
+  { k:'wa', b:'WhatsApp', v:C.whatsapp, href:C.whatsapp?'https://wa.me/'+C.whatsapp.replace(/[^\d]/g,''):'' },
+  { k:'in', b:'LinkedIn', v:C.linkedin, href:C.linkedin }
+];
+$('#channels').innerHTML = chan.map(c => {
+  const set = !!c.href;
+  return `<a class="ch" ${set?`href="${esc(c.href)}"${c.k!=='em'?' target="_blank" rel="noopener noreferrer"':''}`:'aria-disabled="true" href="#contact"'}>
+    <span class="ic">${svg(c.k,17)}</span>
+    <span><b>${c.b}</b><small>${set?esc(c.v):'Add your '+c.b.toLowerCase()+' in the content file'}</small></span></a>`;
+}).join('');
+
+$('#socials').innerHTML = CONTENT.social.map(s => {
+  const set = !!s.url;
+  return `<a class="soc" data-placeholder="${!set}" ${set?`href="${esc(s.url)}" target="_blank" rel="noopener noreferrer"`:'href="#contact"'} aria-label="${esc(s.name)}${set?'':' — link not set'}" title="${esc(s.name)}${set?'':' (placeholder)'}">${svg(s.icon,17)}</a>`;
+}).join('');
+
+/* resume links */
+$$('[data-resume]').forEach(a => {
+  if (CONTENT.site.resumeUrl) { a.href = CONTENT.site.resumeUrl; a.target = '_blank'; a.rel = 'noopener noreferrer'; }
+  else a.addEventListener('click', e => {
+    e.preventDefault();
+    toast('Resume file not configured yet — set site.resumeUrl in the content file.');
+  });
+});
+
+/* ==================================================================
+   CASE STUDY MODAL
+   ================================================================== */
+const modal = $('#modal'), csBody = $('#csBody');
+let lastFocus = null;
+function openCase(i){
+  const p = CONTENT.projects[i]; if(!p) return;
+  const list = a => `<ul>${a.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`;
+  csBody.innerHTML = `
+    <div class="cs-h">
+      <span class="tag${p.placeholder?' ph':''}">${p.placeholder?'Template — replace with a real project':esc(p.category)}</span>
+      <h2 id="csTitle">${esc(p.name)}</h2>
+      <p style="color:var(--text-2);margin:0">${esc(p.summary)}</p>
+      <div class="cs-meta">${p.tech.map(t=>`<span class="chip">${esc(t)}</span>`).join('')}</div>
+    </div>
+    <div class="cs-block"><h3>Overview</h3><p>${esc(p.overview)}</p></div>
+    <div class="cs-block"><h3>Challenge</h3><p>${esc(p.challenge)}</p></div>
+    <div class="cs-block"><h3>Architecture</h3>
+      <div class="diagram"><pre class="tree">${esc(p.diagram)}</pre></div></div>
+    <div class="cs-block"><h3>Implementation</h3>${list(p.implementation)}</div>
+    <div class="cs-block"><h3>Security</h3>${list(p.security)}</div>
+    <div class="cs-block"><h3>Monitoring</h3>${list(p.monitoring)}</div>
+    <div class="cs-block"><h3>Screenshots</h3><div class="shot">Image placeholder — add optimized WebP screenshots (topology, dashboards, configuration).</div></div>
+    <div class="cs-block"><h3>Result</h3><p>${esc(p.result)}</p></div>
+    <div class="cs-block" style="margin-bottom:0"><h3>Lessons learned</h3><p>${esc(p.lessons)}</p></div>`;
+  lastFocus = document.activeElement;
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  modal.querySelector('.modal-close').focus();
+}
+function closeCase(){
+  modal.classList.remove('open');
+  document.body.style.overflow = '';
+  if (lastFocus) lastFocus.focus();
+}
+$$('[data-p]').forEach(b => b.addEventListener('click', () => openCase(+b.dataset.p)));
+$$('[data-close]').forEach(b => b.addEventListener('click', closeCase));
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape'){ if(modal.classList.contains('open')) closeCase(); closeMenu(); }
+  if (e.key === 'Tab' && modal.classList.contains('open')){
+    const f = modal.querySelectorAll('button,a[href],[tabindex]:not([tabindex="-1"])');
+    if(!f.length) return;
+    const first = f[0], last = f[f.length-1];
+    if (e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+  }
+});
+
+/* ==================================================================
+   NAV: scroll state, mobile menu, scrollspy
+   ================================================================== */
+const nav = $('#nav'), burger = $('#burger'), menu = $('#navMenu'), scrim = $('#scrim');
+const onScroll = () => nav.classList.toggle('solid', window.scrollY > 24);
+onScroll(); addEventListener('scroll', onScroll, {passive:true});
+
+function closeMenu(){ menu.classList.remove('open'); scrim.classList.remove('on'); burger.setAttribute('aria-expanded','false'); burger.setAttribute('aria-label','Open menu'); }
+burger.addEventListener('click', () => {
+  const open = menu.classList.toggle('open');
+  scrim.classList.toggle('on', open);
+  burger.setAttribute('aria-expanded', String(open));
+  burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+});
+scrim.addEventListener('click', closeMenu);
+$$('#navLinks a, .nav-act.mob a').forEach(a => a.addEventListener('click', closeMenu));
+
+const links = $$('#navLinks a');
+const spy = new IntersectionObserver(es => {
+  es.forEach(e => {
+    if (!e.isIntersecting) return;
+    links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#'+e.target.id));
+  });
+}, { rootMargin:'-45% 0px -50% 0px' });
+['about','expertise','projects','lab','business','contact'].forEach(id => { const el = document.getElementById(id); if(el) spy.observe(el); });
+
+/* ==================================================================
+   THEME
+   ================================================================== */
+const themeBtn = $('#themeBtn'), root = document.documentElement;
+function setTheme(t){
+  root.setAttribute('data-theme', t);
+  const light = t === 'light';
+  themeBtn.setAttribute('aria-pressed', String(light));
+  themeBtn.setAttribute('aria-label', light ? 'Switch to dark mode' : 'Switch to light mode');
+  themeBtn.innerHTML = light
+    ? '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 019.5 4a8.5 8.5 0 1010.5 10.5z"/></svg>'
+    : '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M6.3 17.7l-1.4 1.4M19.1 4.9l-1.4 1.4"/></svg>';
+  const m = document.querySelector('meta[name="theme-color"]'); if(m) m.content = light ? '#F7F9FC' : '#070B12';
+  try{ localStorage.setItem('ri-theme', t); }catch(e){}
+}
+let saved = null; try{ saved = localStorage.getItem('ri-theme'); }catch(e){}
+setTheme(saved || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'));
+themeBtn.addEventListener('click', () => setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'));
+
+/* ==================================================================
+   REVEAL ON SCROLL
+   ================================================================== */
+const io = new IntersectionObserver((es,o) => {
+  es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); o.unobserve(e.target); } });
+}, { rootMargin:'0px 0px -8% 0px', threshold:.08 });
+$$('.reveal').forEach((el,i) => { el.style.transitionDelay = Math.min(i%6*45,220)+'ms'; io.observe(el); });
+
+/* ==================================================================
+   CONTACT FORM — validation, honeypot, throttle, sanitisation
+   ================================================================== */
+const form = $('#contactForm'), status = $('#formStatus');
+let lastSend = 0;
+const rules = {
+  name:    v => v.trim().length >= 2       || 'Enter your name (2 characters or more).',
+  email:   v => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()) || 'Enter a valid email address.',
+  subject: v => v.trim().length >= 3       || 'Add a short subject.',
+  message: v => v.trim().length >= 20      || 'Tell me a bit more — at least 20 characters.'
+};
+function validate(field){
+  const el = form.elements[field], msg = rules[field](el.value);
+  const box = document.getElementById('e-'+field);
+  const bad = msg !== true;
+  el.setAttribute('aria-invalid', String(bad));
+  box.textContent = bad ? msg : '';
+  return !bad;
+}
+Object.keys(rules).forEach(f => {
+  form.elements[f].addEventListener('blur', () => validate(f));
+  form.elements[f].addEventListener('input', () => { if(form.elements[f].getAttribute('aria-invalid')==='true') validate(f); });
+});
+function show(kind, text){ status.className = 'status show ' + kind; status.textContent = text; }
+function toast(text){ show('bad', text); status.scrollIntoView({block:'nearest', behavior:'smooth'}); }
+
+form.addEventListener('submit', async e => {
+  e.preventDefault();
+  if (form.elements.company.value){ show('ok','Thanks — your message has been received.'); form.reset(); return; } // honeypot
+  if (Date.now() - lastSend < 20000){ show('bad','Please wait a moment before sending another message.'); return; }
+
+  const ok = Object.keys(rules).map(validate).every(Boolean);
+  if (!ok){ show('bad','Please correct the highlighted fields.'); form.querySelector('[aria-invalid="true"]').focus(); return; }
+
+  const data = Object.fromEntries(Object.keys(rules).map(k => [k, form.elements[k].value.trim()]));
+
+  if (CONTENT.site.formEndpoint){
+    try{
+      show('ok','Sending…');
+      const r = await fetch(CONTENT.site.formEndpoint, {
+        method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'}, body:JSON.stringify(data)
+      });
+      if(!r.ok) throw new Error(r.status);
+      lastSend = Date.now(); form.reset();
+      show('ok','Message sent. I usually reply within a day.');
+    }catch(err){
+      show('bad','Could not send right now. Please email directly instead.');
+    }
+  } else if (CONTENT.contact.email){
+    lastSend = Date.now();
+    location.href = `mailto:${CONTENT.contact.email}?subject=${encodeURIComponent(data.subject)}&body=${encodeURIComponent(data.message+'\n\n— '+data.name+' ('+data.email+')')}`;
+    show('ok','Opening your email client with the message ready to send.');
+  } else {
+    show('bad','No delivery method configured yet. Set site.formEndpoint or contact.email in the content file.');
+  }
+});
+
+/* ==================================================================
+   CURSOR (desktop, pointer:fine only)
+   ================================================================== */
+if (matchMedia('(hover:hover) and (pointer:fine)').matches && !matchMedia('(prefers-reduced-motion:reduce)').matches){
+  const cur = $('#cursor');
+  let x=0,y=0,tx=0,ty=0,run=false;
+  addEventListener('mousemove', e => {
+    tx=e.clientX; ty=e.clientY; cur.classList.add('on');
+    if(!run){ run=true; requestAnimationFrame(loop); }
+  }, {passive:true});
+  function loop(){
+    x+=(tx-x)*.19; y+=(ty-y)*.19;
+    cur.style.transform = `translate(${x}px,${y}px) translate(-50%,-50%)`;
+    requestAnimationFrame(loop);
+  }
+  document.addEventListener('mouseover', e => {
+    cur.classList.toggle('hot', !!e.target.closest('a,button,input,textarea,.card'));
+  });
+  addEventListener('mouseleave', () => cur.classList.remove('on'));
+}
+
+/* ==================================================================
+   ROUTING (404) + LOADER
+   ================================================================== */
+const KNOWN = ['','#','#top','#about','#expertise','#stack','#services','#projects','#lab','#ai','#business','#experience','#certifications','#contact','#capability'];
+function route(){
+  const bad = location.hash && !KNOWN.includes(location.hash) && !document.getElementById(location.hash.slice(1));
+  $('#notfound').classList.toggle('show', bad);
+  $('#site').style.display = bad ? 'none' : '';
+  document.querySelector('footer').style.display = bad ? 'none' : '';
+  if (bad) scrollTo(0,0);
+}
+addEventListener('hashchange', route); route();
+$('#homeBtn').addEventListener('click', () => { history.replaceState(null,'','#top'); route(); });
+
+addEventListener('load', () => setTimeout(() => $('#loader').classList.add('done'), 320));
+setTimeout(() => $('#loader').classList.add('done'), 2200); // hard failsafe
+</script>
+</body>
+</html>
